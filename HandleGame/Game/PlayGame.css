@@ -1,0 +1,62 @@
+.hidden_elements {
+    visibility: hidden;
+}
+.loading_container {
+    text-align: center;
+}
+table {
+    height: 70%;
+    font-size: 1em;
+    background-color: black;
+    color:rgba(255, 230, 0, 0.89);
+}
+.Running_Dollar_Amount {
+    position: absolute;
+    left: 50%;
+    top: -15%;
+    transform: translate(-50%, -50%);
+}
+
+
+th, td {
+    padding: .2em .2em;
+    text-align: center; 
+}
+.dollar_container {
+    position: relative;
+    text-align: center;
+}
+.top_image {
+    width: 100%;
+}
+th {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+tr {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.side_picture_left {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0em;
+    padding: 0em;
+    border: none;
+}
+.head {
+    background-color: rgb(32,19,218)
+}
+.data {
+    background-color: rgb(5,0,102);
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 1.5em;
+}

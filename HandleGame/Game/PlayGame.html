@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = 'en' dir = 'ltr'>
+    <head>
+        <title>Project 4</title>
+        <script type = "text/javascript" src = "PlayGame.js"> </script>
+        <link rel="stylesheet" href="PlayGame.css">
+        <meta charset = "utf-8">
+    </head>
+    <body>
+            <div id = "loading_container">
+                Loading...
+            </div>
+            <div id = "hidden_elements">
+                <div class = "game_board_container">
+                    <table class = "Game_Table">
+                        <tr>
+                            <td colspan = "8">
+                                <div class = "dollar_container">
+                                    <img class = "top_image" src = "./Pictures/jeopardy_game_top.PNG">
+                                    <div class = "running_dollar_amount">
+                                        $0
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class = "table_header">
+                            <td rowspan = "6">
+                                <img src = "./Pictures/jeopardy_game_left.PNG">
+                            </td>
+                            <td class = "head" id = "header1">Cat 1</td>
+                            <td class = "head" id = "header2">Cat 2</td>
+                            <td class = "head" id = "header3">Cat 3</td>
+                            <td class = "head" id = "header4">Cat 4</td>
+                            <td class = "head" id = "header5">Cat 5</td>
+                            <td class = "head" id = "header6">Cat 6</td>
+                            <td rowspan = "6">
+                                <img src = "./Pictures/jeopardy_game_right.PNG">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class = "data" id = "Row 1 Col 1" onclick = "handleCell(event)">$200</td>
+                            <td class = "data" id = "Row 1 Col 2" onclick = "handleCell(event)">$200</td>
+                            <td class = "data" id = "Row 1 Col 3" onclick = "handleCell(event)">$200</td>
+                            <td class = "data" id = "Row 1 Col 4" onclick = "handleCell(event)">$200</td>
+                            <td class = "data" id = "Row 1 Col 5" onclick = "handleCell(event)">$200</td>
+                            <td class = "data" id = "Row 1 Col 6" onclick = "handleCell(event)">$200</td>
+                        </tr>
+                        <tr>
+                            <td class = "data" id = "Row 2 Col 1" onclick = "handleCell(event)">$400</td>
+                            <td class = "data" id = "Row 2 Col 2" onclick = "handleCell(event)">$400</td>
+                            <td class = "data" id = "Row 2 Col 3" onclick = "handleCell(event)">$400</td>
+                            <td class = "data" id = "Row 2 Col 4" onclick = "handleCell(event)">$400</td>
+                            <td class = "data" id = "Row 2 Col 5" onclick = "handleCell(event)">$400</td>
+                            <td class = "data" id = "Row 1 Col 6" onclick = "handleCell(event)">$400</td>
+                        </tr>
+                        <tr>
+                            <td class = "data" id = "Row 3 Col 1" onclick = "handleCell(event)">$600</td>
+                            <td class = "data" id = "Row 3 Col 2" onclick = "handleCell(event)">$600</td>
+                            <td class = "data" id = "Row 3 Col 3" onclick = "handleCell(event)">$600</td>
+                            <td class = "data" id = "Row 3 Col 4" onclick = "handleCell(event)">$600</td>
+                            <td class = "data" id = "Row 3 Col 5" onclick = "handleCell(event)">$600</td>
+                            <td class = "data" id = "Row 1 Col 5" onclick = "handleCell(event)">$600</td>
+                        </tr>
+                        <tr>
+                            <td class = "data" id = "Row 4 Col 1" onclick = "handleCell(event)">$800</td>
+                            <td class = "data" id = "Row 4 Col 2" onclick = "handleCell(event)">$800</td>
+                            <td class = "data" id = "Row 4 Col 3" onclick = "handleCell(event)">$800</td>
+                            <td class = "data" id = "Row 4 Col 4" onclick = "handleCell(event)">$800</td>
+                            <td class = "data" id = "Row 4 Col 5" onclick = "handleCell(event)">$800</td>
+                            <td class = "data" id = "Row 1 Col 5" onclick = "handleCell(event)">$800</td>
+                        </tr>
+                        <tr>
+                            <td class = "data" id = "Row 5 Col 1" onclick = "handleCell(event)">$1000</td>
+                            <td class = "data" id = "Row 5 Col 2" onclick = "handleCell(event)">$1000</td>
+                            <td class = "data" id = "Row 5 Col 3" onclick = "handleCell(event)">$1000</td>
+                            <td class = "data" id = "Row 5 Col 4" onclick = "handleCell(event)">$1000</td>
+                            <td class = "data" id = "Row 5 Col 5" onclick = "handleCell(event)">$1000</td>
+                            <td class = "data" id = "Row 1 Col 5" onclick = "handleCell(event)">$1000</td>
+                        </tr>
+                    </table>
+            </div>
+            <label class = "answer_label">Answer: </label>
+            <input  class = "answer_input" type = "text" onkeydown ="handleKeyDown(event)">
+            <div class = jeopardy_question>
+
+            </div>
+            <div class = error_cell_locked>
+
+            </div>
+            <div class = correct_answer>
+
+            </div>
+            <div class = user_answer>
+
+            </div>
+            <div class = correct_or_incorrect>
+
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
+
+
