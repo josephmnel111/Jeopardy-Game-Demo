@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang = 'en' dir = 'ltr'>
     <head>
-        <title>Project 4</title>
+        <title>Jeopardy Game</title>
         <meta charset = "utf-8">
-        <link rel= "stylesheet" href = "styles/LoginCreate.css">
+        <link rel= "stylesheet" href = "index.css">
+        <script type = "text/javascript" src = "index.js"> </script>
     </head>
     <body>
-        <h1>Enter Name</h1>
-        <form action = "HandleGame/MainPage.html" method = "post">
-            <label>Name: </label>
-            <input type = "text" name = "username"><br>
-            <input type = "submit"  class = "designButton" value = "Login"><br>
-        </form>
+        <div class = "container">
+            <button class = "designButton" onclick = "handleButton()">
+                Play Game
+            </button>
+        </div>
+
     </body>
 </html>

@@ -1,0 +1,42 @@
+body {
+    font-family: georgia;
+    /*background: url('./HandleGame/Pictures/jeopardy-cover.jpg') no-repeat center center fixed;*/
+    background: url('./HandleGame/Pictures/jeopardy-cover.jpg');
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.designButton {
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+    border-width: 5px;
+    border-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0, 0);
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    text-align:center;
+}
+.designButton:hover {
+    cursor: pointer;
+}

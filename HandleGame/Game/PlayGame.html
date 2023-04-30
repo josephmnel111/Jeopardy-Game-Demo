@@ -8,95 +8,163 @@
     </head>
     <body>
             <div id = "loading_container">
-                Loading...
+                <div id = "loading_content">
+                    Loading...
+                </div>
             </div>
-            <div id = "hidden_elements">
-                <div class = "game_board_container">
-                    <table class = "Game_Table">
+            <div class = "container">
+                <div id = "hidden_elements">
+                    <div class = "game_board_container">
+                        <table class = "Game_Table">
                         <tr>
                             <td colspan = "8">
                                 <div class = "dollar_container">
-                                    <img class = "top_image" src = "./Pictures/jeopardy_game_top.PNG">
-                                    <div class = "running_dollar_amount">
+                                    <img class = "top_image" src = "../Pictures/jeopardy_game_top.PNG">
+                                    <div id = "running_dollar_amount">
                                         $0
                                     </div>
                                 </div>
                             </td>
                         </tr>
-                        <tr class = "table_header">
-                            <td rowspan = "6">
-                                <img src = "./Pictures/jeopardy_game_left.PNG">
-                            </td>
-                            <td class = "head" id = "header1">Cat 1</td>
-                            <td class = "head" id = "header2">Cat 2</td>
-                            <td class = "head" id = "header3">Cat 3</td>
-                            <td class = "head" id = "header4">Cat 4</td>
-                            <td class = "head" id = "header5">Cat 5</td>
-                            <td class = "head" id = "header6">Cat 6</td>
-                            <td rowspan = "6">
-                                <img src = "./Pictures/jeopardy_game_right.PNG">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class = "data" id = "Row 1 Col 1" onclick = "handleCell(event)">$200</td>
-                            <td class = "data" id = "Row 1 Col 2" onclick = "handleCell(event)">$200</td>
-                            <td class = "data" id = "Row 1 Col 3" onclick = "handleCell(event)">$200</td>
-                            <td class = "data" id = "Row 1 Col 4" onclick = "handleCell(event)">$200</td>
-                            <td class = "data" id = "Row 1 Col 5" onclick = "handleCell(event)">$200</td>
-                            <td class = "data" id = "Row 1 Col 6" onclick = "handleCell(event)">$200</td>
-                        </tr>
-                        <tr>
-                            <td class = "data" id = "Row 2 Col 1" onclick = "handleCell(event)">$400</td>
-                            <td class = "data" id = "Row 2 Col 2" onclick = "handleCell(event)">$400</td>
-                            <td class = "data" id = "Row 2 Col 3" onclick = "handleCell(event)">$400</td>
-                            <td class = "data" id = "Row 2 Col 4" onclick = "handleCell(event)">$400</td>
-                            <td class = "data" id = "Row 2 Col 5" onclick = "handleCell(event)">$400</td>
-                            <td class = "data" id = "Row 1 Col 6" onclick = "handleCell(event)">$400</td>
-                        </tr>
-                        <tr>
-                            <td class = "data" id = "Row 3 Col 1" onclick = "handleCell(event)">$600</td>
-                            <td class = "data" id = "Row 3 Col 2" onclick = "handleCell(event)">$600</td>
-                            <td class = "data" id = "Row 3 Col 3" onclick = "handleCell(event)">$600</td>
-                            <td class = "data" id = "Row 3 Col 4" onclick = "handleCell(event)">$600</td>
-                            <td class = "data" id = "Row 3 Col 5" onclick = "handleCell(event)">$600</td>
-                            <td class = "data" id = "Row 1 Col 5" onclick = "handleCell(event)">$600</td>
-                        </tr>
-                        <tr>
-                            <td class = "data" id = "Row 4 Col 1" onclick = "handleCell(event)">$800</td>
-                            <td class = "data" id = "Row 4 Col 2" onclick = "handleCell(event)">$800</td>
-                            <td class = "data" id = "Row 4 Col 3" onclick = "handleCell(event)">$800</td>
-                            <td class = "data" id = "Row 4 Col 4" onclick = "handleCell(event)">$800</td>
-                            <td class = "data" id = "Row 4 Col 5" onclick = "handleCell(event)">$800</td>
-                            <td class = "data" id = "Row 1 Col 5" onclick = "handleCell(event)">$800</td>
-                        </tr>
-                        <tr>
-                            <td class = "data" id = "Row 5 Col 1" onclick = "handleCell(event)">$1000</td>
-                            <td class = "data" id = "Row 5 Col 2" onclick = "handleCell(event)">$1000</td>
-                            <td class = "data" id = "Row 5 Col 3" onclick = "handleCell(event)">$1000</td>
-                            <td class = "data" id = "Row 5 Col 4" onclick = "handleCell(event)">$1000</td>
-                            <td class = "data" id = "Row 5 Col 5" onclick = "handleCell(event)">$1000</td>
-                            <td class = "data" id = "Row 1 Col 5" onclick = "handleCell(event)">$1000</td>
-                        </tr>
-                    </table>
-            </div>
-            <label class = "answer_label">Answer: </label>
-            <input  class = "answer_input" type = "text" onkeydown ="handleKeyDown(event)">
-            <div class = jeopardy_question>
+                            
+                            <tr class = "table_header">
+                                <td rowspan = "6" class = "left_image_class">
+                                    <img class = "left_image" src = "../Pictures/jeopardy_game_left.PNG">
+                                </td>
+                                <td class = "head" id = "header1">Cat 1</td>
+                                <td class = "head" id = "header2">Cat 2</td>
+                                <td class = "head" id = "header3">Cat 3</td>
+                                <td class = "head" id = "header4">Cat 4</td>
+                                <td class = "head" id = "header5">Cat 5</td>
+                                <td class = "head" id = "header6">Cat 6</td>
+                                <td rowspan = "6" class = "right_image_class">
+                                    <img class = "right_image" src = "../Pictures/jeopardy_game_right.PNG">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class = "data" id = "Row 1 Col 1" onclick = "handleCell(event)">$200</td>
+                                <td class = "data" id = "Row 1 Col 2" onclick = "handleCell(event)">$200</td>
+                                <td class = "data" id = "Row 1 Col 3" onclick = "handleCell(event)">$200</td>
+                                <td class = "data" id = "Row 1 Col 4" onclick = "handleCell(event)">$200</td>
+                                <td class = "data" id = "Row 1 Col 5" onclick = "handleCell(event)">$200</td>
+                                <td class = "data" id = "Row 1 Col 6" onclick = "handleCell(event)">$200</td>
+                            </tr>
+                            <tr>
+                                <td class = "data" id = "Row 2 Col 1" onclick = "handleCell(event)">$400</td>
+                                <td class = "data" id = "Row 2 Col 2" onclick = "handleCell(event)">$400</td>
+                                <td class = "data" id = "Row 2 Col 3" onclick = "handleCell(event)">$400</td>
+                                <td class = "data" id = "Row 2 Col 4" onclick = "handleCell(event)">$400</td>
+                                <td class = "data" id = "Row 2 Col 5" onclick = "handleCell(event)">$400</td>
+                                <td class = "data" id = "Row 2 Col 6" onclick = "handleCell(event)">$400</td>
+                            </tr>
+                            <tr>
+                                <td class = "data" id = "Row 3 Col 1" onclick = "handleCell(event)">$600</td>
+                                <td class = "data" id = "Row 3 Col 2" onclick = "handleCell(event)">$600</td>
+                                <td class = "data" id = "Row 3 Col 3" onclick = "handleCell(event)">$600</td>
+                                <td class = "data" id = "Row 3 Col 4" onclick = "handleCell(event)">$600</td>
+                                <td class = "data" id = "Row 3 Col 5" onclick = "handleCell(event)">$600</td>
+                                <td class = "data" id = "Row 3 Col 6" onclick = "handleCell(event)">$600</td>
+                            </tr>
+                            <tr>
+                                <td class = "data" id = "Row 4 Col 1" onclick = "handleCell(event)">$800</td>
+                                <td class = "data" id = "Row 4 Col 2" onclick = "handleCell(event)">$800</td>
+                                <td class = "data" id = "Row 4 Col 3" onclick = "handleCell(event)">$800</td>
+                                <td class = "data" id = "Row 4 Col 4" onclick = "handleCell(event)">$800</td>
+                                <td class = "data" id = "Row 4 Col 5" onclick = "handleCell(event)">$800</td>
+                                <td class = "data" id = "Row 4 Col 6" onclick = "handleCell(event)">$800</td>
+                            </tr>
+                            <tr>
+                                <td class = "data" id = "Row 5 Col 1" onclick = "handleCell(event)">$1000</td>
+                                <td class = "data" id = "Row 5 Col 2" onclick = "handleCell(event)">$1000</td>
+                                <td class = "data" id = "Row 5 Col 3" onclick = "handleCell(event)">$1000</td>
+                                <td class = "data" id = "Row 5 Col 4" onclick = "handleCell(event)">$1000</td>
+                                <td class = "data" id = "Row 5 Col 5" onclick = "handleCell(event)">$1000</td>
+                                <td class = "data" id = "Row 5 Col 6" onclick = "handleCell(event)">$1000</td>
+                            </tr>
+                        </table>
+                    </div>
 
-            </div>
-            <div class = error_cell_locked>
+                    <div id="myModal" class="modal">
 
-            </div>
-            <div class = correct_answer>
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div id = "question_screen">
+                                <div class = "question_content">
+                                    <div id = "jeopardy_question">
+        
+                                    </div>
+                                <div id = "controls">
+                                    <input type = "text" id = "answer_input" class = "input_box" onkeydown="handleKeyDown(event)">
+                                    <br>
+                                    <button id = "submit_button" onclick = "handleSubmit()">Submit</button>
+                                </div>
+                                </div>
+                            </div>
+                            <div id = "answer_screen">
+                                <div id = "answer_content">
+                                    <div id = "money">
+        
+                                    </div>
+                                    <div id = "answer_section">
+                                        <div id = "user_section">
+                                            <p class = "modal-labels">Your Answer:</p>
+                                            <div id = "jeopardy_answer_user">
+                
+                                            </div>
+                                        </div>
+                                        <div id = "correct_answer">
+                                            <p class = "modal-labels">Correct Answer:</p>
+                                            <div id = "jeopardy_answer_correct">
+            
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                    <div id = "correct_or_incorrect">
+        
+                                    </div>
+                                    <div id = "money_section">
+                                        <div id = "current_money">
+        
+                                        </div>
+                                        <div id = "plus_symbol">
+                                            +
+                                        </div>
+                                        <div id = "added_money">
+        
+                                        </div>
+                                        <div id = "equals_symbol">
+                                            =
+                                        </div>
+                                        <div id = "final_money">
+        
+                                        </div>
 
-            </div>
-            <div class = user_answer>
+                                    </div>
+                                    <div id = "next">
+                                        <button id = "next_question" onclick = "nextQuestion()">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id = "finish_game_container">
+                                <div class = "finish_game_title">
+                                    JEOPARDY
+                                </div>
+                                <div id = "finish_game_score">
+                        
+                                </div>
+                                <div class = "finish_game_button_container">
+                                    <button class = "finish_game_button" onclick = "handlePlayAgain()">Play Again</button>
+                                    <button class = "finish_game_button" onclick = "handleMainMenu()">Main Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+                
             </div>
-            <div class = correct_or_incorrect>
-
-            </div>
-        </div>
+            
         
         
     </body>

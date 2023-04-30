@@ -1,32 +1,65 @@
-.hidden_elements {
+#hidden_elements {
     visibility: hidden;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
-.loading_container {
-    text-align: center;
+.container {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+#loading_container {
+}
+#loading_content {
+    font-size: 30px;
+}
+.game_board_container {
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 90%;
+    width: 90%;
 }
 table {
-    height: 70%;
-    font-size: 1em;
+    height: 100%;
+    width: 100%;
+    font-size: 2.7vw;
+    align-self: center;
     background-color: black;
     color:rgba(255, 230, 0, 0.89);
 }
-.Running_Dollar_Amount {
+.dollar_container {
+    position: relative;
+    height: 60%;
+    width: 100%;
+}
+#running_dollar_amount {
     position: absolute;
+    z-index: 15;
+    top: 50%;
     left: 50%;
-    top: -15%;
     transform: translate(-50%, -50%);
 }
-
 
 th, td {
     padding: .2em .2em;
     text-align: center; 
 }
-.dollar_container {
-    position: relative;
-    text-align: center;
-}
 .top_image {
+    height: 100%;
+    width: 100%;
+}
+.left_image {
+    height: 100%;
+    width: 100%;
+}
+.right_image {
+    height: 100%;
     width: 100%;
 }
 th {
@@ -37,26 +70,207 @@ tr {
     border-collapse: collapse;
     border-spacing: 0;
 }
-.side_picture_left {
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin: 0em;
-    padding: 0em;
-    border: none;
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,.6); /* Black w/ opacity */
+    padding: 2vw;
+
+  }
+  /* Modal Content/Box */
+.modal-content {
+    border-radius: 12px;
+    background-color: #111D8D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%;
+  }
+  
+  
+.left_image_class {
+    width: 8%;
 }
+
+.right_image_class {
+    width: 8%;
+}
+
 .head {
     background-color: rgb(32,19,218)
 }
 .data {
     background-color: rgb(5,0,102);
 }
+.data:hover {
+    cursor:pointer;
+}
+
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
 
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     color: white;
-    margin-left: 10%;
-    margin-right: 10%;
     text-align: center;
     font-family: Georgia;
     font-size: 1.5em;
+}
+#jeopardy_question {
+    font-size: 3.5vw;
+    color: white;
+}
+#jeopardy_answer_user {
+    color: white;
+}
+#jeopardy_answer_correct {
+    color: white;
+}
+.question_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#question_screen {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-labels {
+    color: white;
+}
+#money {
+    color: white;
+}
+#next_question { 
+    margin-top: 2px;
+    border-radius: 12px;
+    background-color: #111D8D;
+    color: white;
+    font-size:14pt;
+    border-color: white;
+    border-width: 2px;
+    width: 12vw;
+    height: 7vh;
+}
+#next_question:hover {
+    cursor: pointer;
+}
+#correct_or_incorrect {
+    color: white;
+}
+.input_box {
+    background-color: #111D8D;
+    border-radius: 12px;
+    color: white;
+    height:4vh;
+    font-size:14pt;
+    border-color: white;
+    border-width: 2px;
+    width: 15vw;
+    height: 5vh;
+    margin: 3vh;
+}
+#submit_button {
+    text-align: center;
+    margin-top: 2px;
+    border-radius: 12px;
+    background-color: #111D8D;
+    color: white;
+    font-size:14px;
+    border-color: white;
+    border-width: 2px;
+    width: 12vw;
+    height: 7vh;
+}
+#submit_button:hover {
+    cursor:pointer;
+}
+#answer_screen {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#answer_section {
+    margin-bottom: 2vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+#answer_content {
+    padding: 2vw;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#user_section {
+    margin-right: 10vw;
+}
+#money_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2vh;
+}
+
+.finish_game_title {
+    font-size: 24px;
+}
+#current_money {
+    margin: 1vw;
+}
+#plus_symbol {
+    margin: 1vw;
+    
+}
+
+#added_money {
+    margin: 1vw;
+    
+}
+#equals_symbol {
+    margin: 1vw;
+    
+}
+#final_money {
+    margin: 1vw;
+    
+}
+.finish_game_score {
+
+}
+.finish_game_button_container {
+    
+}
+.finish_game_button {
+    margin: 2vw;
+    border-radius: 12px;
+    background-color: #111D8D;
+    color: white;
+    font-size:14pt;
+    border-color: white;
+    border-width: 2px;
+    width: 18vw;
+    height: 10vh;
 }
